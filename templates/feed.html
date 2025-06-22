@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome, {{ current_user.username }} | <a href="{{ url_for('logout') }}">Logout</a></h2>
+
+<form method="post">
+    <textarea name="content" placeholder="What's on your mind?" required></textarea><br>
+    <button type="submit">Post</button>
+</form>
+
+<h3>Latest Posts:</h3>
+{% for tweet in tweets %}
+    <div class="tweet">
+        <b>@{{ tweet.username }}</b>: {{ tweet.content }}
+    </div>
+{% endfor %}
+{% endblock %}

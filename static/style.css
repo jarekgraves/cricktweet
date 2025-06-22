@@ -1,0 +1,84 @@
+/* ────────────────────────────────────────────────────────────────────────────── */
+/*                                CrickTweet CSS                                 */
+/* ────────────────────────────────────────────────────────────────────────────── */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+.navbar {
+  background: #0d47a1;
+  padding: 12px 20px;
+  text-align: center;
+}
+.navbar a {
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+h2 {
+  margin-bottom: 16px;
+  color: #0d47a1;
+}
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 12px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+button:hover {
+  background: #082f6f;
+}
+.flash {
+  background: #ffefc2;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-left: 4px solid #ffb300;
+  border-radius: 4px;
+}
+.match-card, .player-list, .post, .media-gallery {
+  margin-bottom: 16px;
+}
+.match-card, .post {
+  background: #e3f2fd;
+  padding: 12px;
+  border-left: 4px solid #0d47a1;
+  border-radius: 4px;
+}
+.player-list li {
+  list-style: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.player-list li:last-child {
+  border: none;
+}
+.media-gallery img {
+  width: 150px;
+  height: auto;
+  margin-right: 12px;
+  border-radius: 4px;
+}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>📸 Media Highlights</h2>
+  <div class="media-gallery">
+    {% for img in images %}
+      <img src="{{ url_for('static', filename=img) }}" alt="">
+    {% endfor %}
+  </div>
+{% endblock %}

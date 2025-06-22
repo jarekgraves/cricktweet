@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>👥 Players You Follow</h2>
+  <ul class="player-list">
+    {% for p in players %}
+      <li>{{ p }}</li>
+    {% endfor %}
+  </ul>
+  <button>Follow More Players</button>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>🏏 Live Match Feed</h2>
+  {% for m in matches %}
+    <div class="match-card">
+      <strong>{{ m.teams }}</strong><br>
+      {{ m.score }}
+    </div>
+  {% endfor %}
+{% endblock %}
